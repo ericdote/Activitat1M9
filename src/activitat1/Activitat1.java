@@ -35,7 +35,7 @@ public class Activitat1 {
         for (int i = 0; i < llistaResultats.size(); i++) {
             Future<Integer> resultat = llistaResultats.get(i);
             try {
-                System.out.println("Resultat tasca " + i + " és:" + resultat.get());
+                System.out.println("Multiplicacio " + i + " resultat: " + resultat.get());
             } catch (InterruptedException | ExecutionException e) {
             }
         }
